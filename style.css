@@ -1,0 +1,155 @@
+
+/* Basic styling and layout */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 240px 1fr 240px;
+    gap: 20px;
+    /* max-width: 1200px; */
+    width: 100%;
+    padding: 20px;
+    
+}
+
+/* Sidebar styling */
+.sidebar {
+    background-color:white;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 850px;
+    
+}
+
+.sidebar h2 {
+    font-size: 24px;
+    color: black;
+    margin-bottom: 20px;
+    font-family: face;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 80px 10px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #000000;
+}
+
+/* Main content styling */
+.main-content {
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #dbdbdb;
+    border-radius: 10px;
+}
+
+.stories {
+    display: flex;
+    gap: 80px;
+    margin-bottom: 20px;
+}
+
+.story {
+    text-align: center;
+}
+
+.story img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid #dbdbdb;
+}
+
+.feed {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.post-header img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.post-image {
+    width: 100%;
+    border-radius: 10px;
+    
+}
+
+.post-footer {
+    margin-top: 10px;
+}
+
+/* Right sidebar styling */
+.right-sidebar {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #dbdbdb;
+    border-radius: 10px;
+}
+
+.right-sidebar h3 {
+    font-size: 18px;
+    color: #262626;
+}
+
+.right-sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.right-sidebar ul li {
+    margin: 10px 0;
+}
+
+.right-sidebar ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #0095f6;
+}
+
+
+
+/* Sidebar icons */
+.sidebar ul li a i {
+    margin-right: 10px;
+}
+
+/* Post footer icons (likes, comments, shares) */
+.post-footer i {
+    font-size: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.post-footer i:hover {
+    color: #ff4d4d; /* Change color on hover */
+}
+@font-face {
+    font-family: face;
+    src: url(./Fontspring-DEMO-blue_vinyl_regular_ps_ot.otf);
+}
